@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registra</title>
+    <link rel="stylesheet" href="" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="http://localhost/StudioMedico/bootstrap/css/bootstrap.css">
+  </head>
+  <body>
+    <body style="background-color:#B3FF99">
+    <script src="http://localhost/StudioMedico/js/jquery-2.1.4.js"></script>
+    <script src="http://localhost/StudioMedico/bootstrap/js/bootstrap.js"></script>
+    <div class="jumbotron" style="background-color:#009933;color:#fff;">
+        <h1>Studio Medico Chiodarini</h1>
+          <p>Registrati per accedere al portale</p>
+
+        </div>
+       <ul class="topnav">
+  <li><a href="login.html">Accedi</a></li>
+  <li><a class="active" href="registrati.html">Registrati</a></li>
+  <li><a href="contatti.html">Contatti</a></li>
+  <li class="right"><a href="LoginMedico.html">Login Medici</a></li>
+</ul>
+</br>
+</br>
+    <div class="container">
+    <div class="bs-example">
+    <form method="post" action="http://localhost/StudioMedico/php/studioMedicoClient.php">
+    	 <div class="form-group">
+            <label for="inputName">Nome</label>
+            <input type="text" required="true" class="form-control" id="inputName" placeholder="Nome" name="nome">
+        </div>
+    	 <div class="form-group">
+            <label for="inputName">Cognome</label>
+            <input type="text" required="true" class="form-control" id="inputName" placeholder="Cognome" name="cognome">
+        </div>
+    	 <div class="form-group">
+            <label for="inputEmail">Codice Fiscale</label>
+            <input type="text" required="true" class="form-control" id="inputName" placeholder="CodiceFiscale" name="codFiscP">
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Indirizzo</label>
+            <input type="text" required="true" class="form-control" id="inputName" placeholder="Indirizzo" name="indirizzo">
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Telefono</label>
+            <input type="tel" required="true" class="form-control" id="inputName" placeholder="Telefono" name="tel">
+        </div>
+         <div class="form-group">
+<label class="col-xs-3 control-label">Medici</label>
+		     <div class="col-xs-5 selectContainer">
+            	<select class="form-control" name="codFiscM">
+               		<option value="">Seleziona Medico</option>
+                	<option value="MSLTTN85P62Z401C">Tatiana Maslany</option>
+                	<option value="FRNTLS83C05G478Q">Francesco Trolissi</option>
+                	<option value="MSTLSN86B58F839B">Alessandra Mastronardi</option>
+                    <option value="BRGLSN86P19H501I">Alessandro Borghi</option>
+
+            	</select>
+        	</div>
+        	</br>
+    </div>
+        <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" required="true" class="form-control" id="inputEmail" placeholder="Email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" required="true" class="form-control" id="inputPassword" placeholder="Password" name="password">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" required="true" class="form-control" id="inputPassword" placeholder="Riconferma Password" name="password2">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Ricordami</label>
+        </div>
+        <input type="hidden" name="name" value="getRegiStato"/>
+        <button type="submit" class="btn btn-primary navbar-btn btn-lg">Registrarti!</button>
+    </form>
+</div></div>
+  </body>
+</html>

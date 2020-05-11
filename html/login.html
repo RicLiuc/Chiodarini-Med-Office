@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="http://localhost/StudioMedico/bootstrap/css/bootstrap.css">
+  </head>
+  <body style="background-color:#B3FF99">
+    <script src="http://localhost/StudioMedico/js/jquery-2.1.4.js"></script>
+    <script src="http://localhost/StudioMedico/bootstrap/js/bootstrap.js"></script>
+    <div class="jumbotron" style="background-color:#009933;color:#fff;">
+        <h1>Studio Medico Chiodarini</h1>
+          <p>Effettua L'accesso Come Paziente</p>
+
+        </div>
+       <ul class="topnav">
+  <li><a class="active" href="login.html">Accedi</a></li>
+   <li><a href="registrati.html">Registrati</a></li>
+  <li><a href="contatti.html">Contatti</a></li>
+  <li class="right"><a href="http://localhost/StudioMedico/html/LoginMedico.html">Login Medici</a></li>
+</ul>
+</br>
+</br>
+
+    <div class="container">
+
+    <div class="bs-example">
+    <form method="post" action="http://localhost/StudioMedico/php/studioMedicoClient.php">
+        <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Ricordami</label>
+        </div>
+        <input type="hidden" name="name" value="getLoginStato"/>
+        <button type="submit" class="btn btn-primary navbar-btn btn-lg">Login</button>
+    </form>
+</div></div>
+
+  </body>
+</html>
